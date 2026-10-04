@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gestion des demandes — Politique de confidentialité</title>
+<style>
+  :root{
+    --fond:#f3f4f6; --carte:#ffffff; --encre:#111827; --encre2:#6b7280;
+    --trait:#e5e7eb; --accent:#2563eb;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{ --fond:#111827; --carte:#1f2937; --encre:#f3f4f6; --encre2:#9ca3af; --trait:#374151; --accent:#60a5fa; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--fond);color:var(--encre);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;line-height:1.65}
+  .wrap{max-width:720px;margin:0 auto;padding:48px 22px 80px}
+  a{color:var(--accent);text-decoration:none;font-weight:600}
+  a:hover{text-decoration:underline}
+  .retour{font-size:14px}
+  h1{font-size:26px;letter-spacing:-.02em;margin:18px 0 4px}
+  .maj{color:var(--encre2);font-size:14px;margin:0 0 8px}
+  .carte{background:var(--carte);border:1px solid var(--trait);border-radius:16px;padding:8px 26px 20px;margin-top:24px}
+  h2{font-size:18px;margin:22px 0 8px}
+  p{margin:0 0 12px}
+  ul{padding-left:20px;margin:0 0 12px}
+  li{margin:6px 0}
+  strong{font-weight:650}
+  footer{margin-top:30px;color:var(--encre2);font-size:13px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="retour" href="index.html">← Assistance</a>
+  <h1>Politique de confidentialité</h1>
+  <p class="maj">Gestion des demandes · Dernière mise à jour : 4 octobre 2026</p>
+
+  <div class="carte">
+    <h2>En bref</h2>
+    <p>Gestion des demandes est un outil privé de suivi des demandes de développement des projets de
+      son développeur. Les comptes sont créés par l'administrateur ; il n'y a pas d'inscription
+      publique. L'application ne contient <strong>ni publicité, ni analytique, ni traceur tiers</strong>,
+      et aucune donnée n'est vendue ni partagée à des fins commerciales.</p>
+
+    <h2>Ce que l'application traite</h2>
+    <ul>
+      <li><strong>Ton compte</strong> : identifiant, prénom et nom (ou nom affiché), courriel facultatif,
+        rôle. Le mot de passe n'est jamais conservé en clair : seule une empreinte salée l'est.</li>
+      <li><strong>Tes sessions</strong> : un jeton de session (sous forme d'empreinte), le type de client
+        (web, iPhone, iPad ou Mac) et les dates de création, de dernier usage et d'expiration. Tu
+        peux fermer une session depuis l'application.</li>
+      <li><strong>Tes appareils</strong>, si tu actives les notifications : le jeton de notification
+        remis par Apple, la plateforme et le nom que tu donnes à l'appareil. Ils servent uniquement à
+        t'envoyer les notifications que tu as demandées et sont supprimés quand tu les désactives ou
+        te déconnectes.</li>
+      <li><strong>Le contenu que tu saisis</strong> : demandes, descriptions, notes, réponses, journal
+        d'activité et images que tu joins à une demande. Ce contenu est partagé avec les autres
+        personnes autorisées sur le même projet, c'est l'objet de l'outil.</li>
+      <li><strong>Sur le Mac</strong>, la sauvegarde copie les dossiers de projets que tu désignes vers
+        la destination que tu choisis, localement sur ton Mac. Seul l'état de la sauvegarde (dates,
+        nombre de dossiers) est transmis au serveur pour l'afficher sur tes autres appareils.</li>
+    </ul>
+
+    <h2>Où sont ces données</h2>
+    <p>Elles sont stockées sur les serveurs de l'application, hébergés par
+      <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare</a> (Workers et base de données
+      D1) dans le compte du développeur, et chiffrées en transit (HTTPS). L'adresse IP n'est utilisée
+      que pour limiter les tentatives de connexion et n'est pas conservée au-delà de dix minutes.
+      Les erreurs du serveur sont consignées sans donnée personnelle.</p>
+    <p>Sur ton appareil, l'application garde un cache des demandes pour la consultation hors ligne,
+      tes brouillons, tes préférences d'affichage (thème, taille du texte) et tes identifiants de
+      session dans le trousseau du système.</p>
+
+    <h2>Services d'Apple</h2>
+    <p>Les notifications passent par le service de notifications push d'Apple, régi par la
+      <a href="https://www.apple.com/legal/privacy/">politique de confidentialité d'Apple</a>. Aucune
+      donnée n'est transmise à d'autres tiers.</p>
+
+    <h2>Conservation et suppression</h2>
+    <p>Tes données sont conservées tant que ton compte existe. Les sessions expirées et révoquées sont
+      purgées. Sur demande à l'administrateur, ton compte est désactivé et ses sessions et jetons
+      d'appareils supprimés ; tes contributions aux demandes restent dans l'historique des projets.
+      Supprimer l'application efface le cache, les brouillons et les préférences de l'appareil.</p>
+
+    <h2>Tes droits</h2>
+    <p>Tu peux demander l'accès, la correction ou la suppression des données qui te concernent en
+      écrivant à l'adresse ci-dessous.</p>
+
+    <h2>Nous joindre</h2>
+    <p>Pour toute question concernant cette politique : <a href="mailto:dany@berube.info">dany@berube.info</a></p>
+  </div>
+
+  <footer>© 2026 Dany Bérubé</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gestion des demandes — Assistance</title>
+<style>
+  :root{
+    --fond:#f3f4f6; --carte:#ffffff; --encre:#111827; --encre2:#6b7280;
+    --trait:#e5e7eb; --accent:#2563eb;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{ --fond:#111827; --carte:#1f2937; --encre:#f3f4f6; --encre2:#9ca3af; --trait:#374151; --accent:#60a5fa; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--fond);color:var(--encre);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;line-height:1.65}
+  .wrap{max-width:720px;margin:0 auto;padding:48px 22px 80px}
+  a{color:var(--accent);text-decoration:none;font-weight:600}
+  a:hover{text-decoration:underline}
+  header{display:flex;align-items:center;gap:16px}
+  .glyph{width:56px;height:56px;border-radius:14px;background:#1c2230;color:#fff;display:flex;align-items:center;justify-content:center;flex:none}
+  .glyph svg{width:30px;height:30px}
+  h1{font-size:26px;letter-spacing:-.02em;margin:0}
+  .sous{color:var(--encre2);margin:2px 0 0;font-size:15px}
+  .carte{background:var(--carte);border:1px solid var(--trait);border-radius:16px;padding:8px 26px 20px;margin-top:24px}
+  h2{font-size:18px;margin:16px 0 8px}
+  p{margin:0 0 10px}
+  ul{margin:0 0 4px;padding-left:20px}
+  li{margin:6px 0}
+  .courriel{display:inline-block;margin-top:6px;font-size:18px}
+  footer{margin-top:32px;color:var(--encre2);font-size:13px;text-align:center}
+  footer a{font-weight:500}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="glyph" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 13h5l2 3h4l2-3h5"/><path d="M5 5h14l2 8v6H3v-6z"/>
+      </svg>
+    </span>
+    <div>
+      <h1>Gestion des demandes</h1>
+      <p class="sous">Assistance</p>
+    </div>
+  </header>
+
+  <div class="carte">
+    <h2>Besoin d'aide ?</h2>
+    <p>Une question, un problème ou une suggestion ? Écris-nous, on répond directement.</p>
+    <a class="courriel" href="mailto:dany@berube.info">dany@berube.info</a>
+  </div>
+
+  <div class="carte">
+    <h2>Une application sur invitation</h2>
+    <p>Gestion des demandes suit les demandes de développement des projets de son développeur, sur
+      iPhone, iPad et Mac. Elle n'est pas offerte au grand public : les comptes sont créés par
+      l'administrateur, qui te remet ton identifiant et ton mot de passe.</p>
+  </div>
+
+  <div class="carte">
+    <h2>Pour bien démarrer</h2>
+    <ul>
+      <li><strong>À traiter</strong> : tout ce qui attend une action, groupé par type ; une carte
+        s'ouvre d'un toucher, les actions permises sont sous le texte.</li>
+      <li><strong>Demandes</strong> : la liste filtrable de toutes les demandes, la fiche de chacune
+        avec ses réglages, son journal et son historique.</li>
+      <li><strong>Pilotage et suivis</strong> : état de l'autopilot, dépôts GitHub, flux, processus,
+        alertes, échéances, builds Apple et Cloudflare, pour les rôles qui y ont droit.</li>
+      <li><strong>Notifications</strong> : à activer dans Administration › Notifications ; chaque
+        appareil porte le nom que tu lui donnes.</li>
+      <li><strong>Thèmes</strong> : Papier, Ardoise, Teintes ou Encre dans Compte › Application, sur
+        chaque appareil.</li>
+      <li><strong>Sur Mac</strong> : raccourcis ⌘N, ⌘R, ⌘1 à ⌘9, fenêtres de demande indépendantes et
+        sauvegarde locale des dossiers de projets depuis le Mac principal.</li>
+    </ul>
+  </div>
+
+  <div class="carte">
+    <h2>Confidentialité</h2>
+    <p>Aucune publicité, aucun suivi, aucune donnée vendue. Tes données vivent sur les serveurs de
+      l'application et sur tes appareils. Consulte la
+      <a href="confidentialite.html">politique de confidentialité</a>.</p>
+  </div>
+
+  <footer>
+    © 2026 Dany Bérubé · <a href="confidentialite.html">Confidentialité</a>
+  </footer>
+</div>
+</body>
+</html>
